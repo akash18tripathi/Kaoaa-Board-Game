@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Koaa Board Game</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="text/javascript" src="../JS/script.js"></script>
+    
+</head>
+<body>
+<div class="mainDiv" >
+    <div data-tilt >
+    <svg width="1500" height="700"  >
+        <polygon points="450,300 1150,300 500,700 800,100 1100,700"
+          style="fill: skyblue; stroke: black; stroke-width: 1; fill-rule: evenodd" />
+    </svg>
+    
+
+    <div class="circle" id="pos1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="circle" id="pos2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="circle" id="pos3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="circle" id="pos4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="circle" id="pos5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="circle" id="pos6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="circle" id="pos7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="circle" id="pos8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="circle" id="pos9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="circle" id="pos10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+    <div class="crowDiv">
+        <div class="crows" id="crow1" draggable="true" ondragstart="drag(event)"></div><br>
+        <div class="crows" id="crow2" draggable="true" ondragstart="drag(event)"></div><br>
+        <div class="crows" id="crow3" draggable="true" ondragstart="drag(event)"></div><br>
+        <div class="crows" id="crow4" draggable="true" ondragstart="drag(event)"></div><br>
+        <div class="crows" id="crow5" draggable="true" ondragstart="drag(event)"></div><br>
+        <div class="crows" id="crow6" draggable="true" ondragstart="drag(event)"></div><br>
+        <div class="crows" id="crow7" draggable="true" ondragstart="drag(event)"></div><br>
+    </div>
+
+    
+    <div class="vultureDiv">
+        <div class="vulture" id="vulture" draggable="true" ondragstart="drag(event)"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+    <a href="" id="log" download="Logs.txt" onclick="getLogs()">Download Log File </a>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../JS/tilt.jquery.js"></script>
+</body>
+
+</html>
